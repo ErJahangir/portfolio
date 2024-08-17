@@ -1,33 +1,128 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+ 
+body{
+    background: #1f1f38;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("/climpek.png");
+    line-height: 1.7;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.text-container {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  .text {
+    display: inline-block;
+    animation: typing 5s steps(14) infinite, blink 0.75s step-end infinite;
   }
+  
+  @keyframes typing {
+    0% { width: 0; }
+    50% { width: 13ch; }
+    100% { width: 0; }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  }
+
+
+  .experience__container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experience__container > div{
+
+    background: rgb(68, 68, 124);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.experience__container > div:hover{
+
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+    transition-duration: 1500ms;
+}
+
+.experience__container > div h3{
+
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.experience__content{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    row-gap: 2rem;
+}
+
+.experience__details{
+
+    display: flex;
+    gap: 2rem;
+}
+
+.experience__details-icon{
+    margin-top: 6px;
+    color: rgb(115, 194, 234);
+}
+
+/* Media queries for medium devices(Tablets) */
+
+@media screen and (max-width: 1024px) {
+
+    .experience__container{
+
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container > div{
+
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experience__content{
+
+        padding: 1rem;
+    }
+
+}
+
+/* Media queries for small devices(Mobiles) */
+
+@media screen and (max-width: 600px) {
+
+    .experience__container{
+
+        gap: 1rem;
+    }
+
+    .experience__container > div{
+
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
+
+.experience__details-icon1{
+    color: rgb(115, 194, 234);
 }

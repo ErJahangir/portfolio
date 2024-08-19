@@ -7,6 +7,7 @@ import Experience from "./Component/Experience";
 import Project from "./Component/Project";
 import Education from "./Component/Education";
 import Contact from "./Component/Contact";
+import Link from "next/link";
 
 const page = () => {
   return (

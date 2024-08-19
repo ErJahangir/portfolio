@@ -51,6 +51,7 @@ const Home = () => {
         <Image
           height={50}
           width={300}
+          alt="Image"
           src="/topimage.png"
           className="rounded-t-full bg-slate-400 w-[230px] h-[300px] md:w-[300px] md:h-[350px]"
         />

@@ -3,49 +3,73 @@ import { BsFillPatchCheckFill } from "react-icons/bs";
 
 const Experience = () => {
   return (
-    <section id="Experience" className="flex flex-col items-center my-9 gap-6">
-      <h5>The skills I have</h5>
-      <h2>My Experience</h2>
+    <section
+      id="Experience"
+      className="flex flex-col items-center my-9 gap-6 w-[95%] mx-auto"
+    >
+      <h5 className="text-xl uppercase">The skills I have</h5>
+      <h2 className="text-3xl uppercase border-b-2">My Experience</h2>
 
-      <div className="container experience__container">
+      <div className="experience__container">
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
 
           <div className="experience__content">
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
-              </div>
+
+              <h4>HTML5</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+
+              <h4>CSS3</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
+
+              <h4>JavaScript</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Bootstrap</h4>
-                <small className="text-light">Beginner</small>
-              </div>
+
+              <h4>Bootstrap</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>ReactJs</h4>
-                <small className="text-light">Beginner</small>
-              </div>
+              <h4>Tailwind css</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>ReactJs</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>React Native</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Next js</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Git\GitHub</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>API Integration</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Logical Skills</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Leadership</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Creeative Thinking</h4>
             </article>
           </div>
         </div>

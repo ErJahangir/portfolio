@@ -5,16 +5,19 @@ import { GiAchievement } from "react-icons/gi";
 import { TbWorld } from "react-icons/tb";
 const About = () => {
   return (
-    <div id="About" className="flex flex-col items-center  ">
-      <h2 className="capitalize ">Get to know</h2>
-      <h2>About me</h2>
-      <div className="flex flex-wrap  mx-auto items-center justify-between">
-        <div className="bg-white rounded-2xl my-10 mx-auto">
+    <div id="About" className="flex flex-col items-center mx-auto w-[95%] ">
+      <h2 className="capitalize text-3xl">Get to know</h2>
+      <h2 className="text-4xl mb-6 uppercase font-bold">About me</h2>
+      <div className="flex flex-col md:flex-row  mx-auto items-center gap-52 md:gap-8">
+        <div className="imagediv">
+          {/* <div className="bg-white rounded-2xl my-10 mx-auto"> */}
           <Image
             height={50}
             width={300}
+            alt="Image"
             src="/topimage.png"
-            className=" w-[300px] h-[350px] -rotate-12 bg-slate-500 hover:rotate-0 duration-500 rounded-2xl"
+            // className=" w-[300px] h-[350px] image -rotate-45 bg-slate-500 hover:rotate-0 duration-500 rounded-2xl"
+            className="image rounded-3xl"
           />
         </div>
         <div className="flex flex-col mx-auto w-[95%] lg:w-[49%] gap-5 ">

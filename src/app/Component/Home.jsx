@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="flex h-[900px] w-[90%] flex-row items-center justify-between mx-auto">
+    <div className="flex  h-[750px] md:h-[900px] w-[90%] flex-row items-center justify-between mx-auto">
       <div className="flex flex-col gap-3">
         <Link
           href="https://www.linkedin.com/in/jahangircse786"
@@ -53,7 +53,7 @@ const Home = () => {
           width={300}
           alt="Image"
           src="/topimage.png"
-          className="rounded-t-full bg-blue-950 -rotate-3 w-[230px] h-[300px] md:w-[300px] md:h-[350px]"
+          className=" bg-black rounded-xl w-[230px] h-[280px] md:w-[300px] md:h-[350px]"
         />
       </div>
       <div className="rotate-90 hidden md:flex text-xl md:text-2xl">

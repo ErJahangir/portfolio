@@ -33,6 +33,11 @@ const Footer = () => {
           <FaGithub className="text-xl" />
         </Link>
       </div>
+      {/* <div className="border-b-2 w-full my-8"></div>
+      <div>
+        <h2>@ All Rights Reserved.</h2>
+        <h2>All Rights Reserved.</h2>
+      </div> */}
     </div>
   );
 };

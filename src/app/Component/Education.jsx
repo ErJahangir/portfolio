@@ -36,7 +36,7 @@ const Education = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-[400px] h-[200px] flex flex-col justify-center gap-3 mx-auto hover:shadow-lg rounded-3xl p-5 bg-[#44447c] border-0 duration-1000  hover:bg-transparent hover:border-[1px]"
+            className=" w-[95%] md:w-[400px] h-[200px] flex flex-col justify-center gap-3 mx-auto hover:shadow-lg rounded-3xl p-5 bg-[#44447c] border-0 duration-1000  hover:bg-transparent hover:border-[1px]"
           >
             <h2 className="font-sans text-xl font-semibold">
               {item.name} - {item.course}

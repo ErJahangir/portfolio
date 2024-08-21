@@ -68,12 +68,13 @@ const About = () => {
             foundation and hands-on experience in both web development and
             application development. I specialize in building dynamic and
             responsive web interfaces using React.js, as well as developing
-            mobile applications with React Native. <br />I am actively seeking a
-            challenging internship opportunity where I can leverage my skills in
-            React.js and React Native, contribute to innovative projects, and
-            learn from experienced professionals in the industry. As a quick
-            learner with a strong problem-solving mindset, I am always ready to
-            embrace new challenges and continuously improve my expertise.
+            mobile applications with React Native. <br /> <br />I am actively
+            seeking a challenging internship opportunity where I can leverage my
+            skills in React.js and React Native, contribute to innovative
+            projects, and learn from experienced professionals in the industry.
+            As a quick learner with a strong problem-solving mindset, I am
+            always ready to embrace new challenges and continuously improve my
+            expertise.
           </h2>
         </div>
       </div>

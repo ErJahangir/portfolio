@@ -37,13 +37,13 @@ const Home = () => {
           <Link
             href="/new-resume.pdf"
             download
-            className="border px-5 py-3 rounded-lg hover:bg-green-700 hover:text-gray-900 text-xl capitalize font-semibold duration-1000"
+            className="border px-5 py-3 rounded-lg hover:bg-green-700 hover:text-gray-900 text-[15px] md:text-xl capitalize font-semibold duration-1000"
           >
             Resume
           </Link>
           <Link
             href="#Contact"
-            className="border px-6 py-3 rounded-lg bg-green-600 text-xl capitalize font-semibold duration-1000 hover:text-black hover:bg-white"
+            className="border px-6 py-3 rounded-lg bg-green-600 text-[15px] md:text-xl capitalize font-semibold duration-1000 hover:text-black hover:bg-white"
           >
             Contact us
           </Link>
@@ -53,7 +53,7 @@ const Home = () => {
           width={300}
           alt="Image"
           src="/topimage.png"
-          className="rounded-t-full bg-slate-400 w-[230px] h-[300px] md:w-[300px] md:h-[350px]"
+          className="rounded-t-full bg-blue-950 -rotate-3 w-[230px] h-[300px] md:w-[300px] md:h-[350px]"
         />
       </div>
       <div className="rotate-90 hidden md:flex text-xl md:text-2xl">

@@ -49,10 +49,12 @@ const Project = () => {
           <Link
             href="/"
             key={item.id}
-            className="w-[400px] mx-auto flex flex-col items-center justify-center hover:shadow-lg rounded-3xl p-5 bg-[#44447c] duration-[1500ms] hover:border  hover:bg-transparent"
+            className="w-[95%] md:w-[400px] mx-auto flex flex-col items-center justify-center hover:shadow-lg rounded-3xl p-5 bg-[#44447c] duration-[1500ms] hover:border  hover:bg-transparent"
           >
-            <h3 className="text-3xl mb-5">{item.Name}</h3>
-            <p className="text-justify mb-5">{item.description}</p>
+            <h3 className=" text-xl md:text-3xl mb-5">{item.Name}</h3>
+            <p className="text-[15px] md:text-[20px] text-justify mb-5">
+              {item.description}
+            </p>
             <div className="flex flex-row gap-2">
               {item.button ? (
                 <Link

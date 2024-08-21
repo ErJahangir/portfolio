@@ -23,7 +23,7 @@ const About = () => {
         <div className="flex flex-col mx-auto w-[95%] lg:w-[49%] gap-5 ">
           <div className="flex flex-wrap gap-3 mx-auto">
             <div className="w-[250px] md:w-[200px] flex flex-col mx-auto relative items-center rounded-xl duration-1000 h-[250px] md:h-[200px] border bg-green-500  group">
-              <h2 className="text-3xl font-bold font-serif ml-10 group-hover:hidden duration-1000 my-auto ">
+              <h2 className="text-3xl font-bold font-serif group-hover:hidden duration-1000 my-auto md:ml-8 ">
                 Go for Degree
               </h2>
               <div className="opacity-0 top-28  group-hover:top-3 absolute group-hover:opacity-100 duration-1000 flex flex-col items-center">
@@ -39,7 +39,7 @@ const About = () => {
               </div>
             </div>
             <div className="w-[250px] md:w-[200px] flex flex-col relative items-center rounded-xl duration-1000 h-[250px] md:h-[200px] mx-auto border bg-green-500  group">
-              <h2 className="text-3xl font-bold font-serif ml-10 group-hover:hidden duration-1000 my-auto ">
+              <h2 className="text-3xl font-bold font-serif  group-hover:hidden duration-1000 my-auto md:ml-8">
                 Go for Marks
               </h2>
               <div className="opacity-0 top-28 group-hover:top-7 absolute group-hover:opacity-100 duration-1000 flex flex-col items-center">
@@ -50,8 +50,8 @@ const About = () => {
                 <h2 className="font-bold text-slate-200">8.13</h2>
               </div>
             </div>
-            <div className="w-[250px] md:w-[200px] flex flex-col mx-auto relative items-center rounded-xl duration-1000 h-[250px] md:h-[200px] border bg-green-500  group">
-              <h2 className="text-3xl font-bold font-serif ml-10 group-hover:hidden duration-1000 my-auto ">
+            <div className="w-[250px] md:w-[200px] flex flex-col mx-auto relative items-center rounded-xl duration-1000 h-[250px] justify-center md:h-[200px] border bg-green-500  group">
+              <h2 className="text-3xl font-bold font-serif group-hover:hidden duration-1000 my-auto md:ml-8">
                 Go for Domain
               </h2>
               <div className="opacity-0 top-28 group-hover:top-5 absolute group-hover:opacity-100 duration-1000 flex flex-col items-center">
@@ -64,7 +64,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <h2 className="w-[95%] mx-auto text-justify">
+          <h2 className="w-[95%] border p-2 rounded-xl bg-[#4a4a90] hover:bg-transparent duration-1000 hover:shadow-3xl mx-auto text-justify">
             I'm a Software Engineering Undergradute at the University of
             Kelaniya. I'm an enthusiastic and driven Software Engineering
             student seeking a challenging internship opportunity to apply and

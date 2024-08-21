@@ -5,8 +5,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="flex  h-[750px] md:h-[900px] w-[90%] flex-row items-center justify-between mx-auto">
-      <div className="flex flex-col gap-3">
+    <div className="flex  h-[750px] md:h-[900px] w-[98%]  md:w-[80%] flex-row items-center justify-between mx-auto">
+      <div className="flex flex-col gap-3 mx-auto">
         <Link
           href="https://www.linkedin.com/in/jahangircse786"
           target="_blank"
@@ -25,7 +25,7 @@ const Home = () => {
           <FaGithub className="text-xl" />
         </Link>
       </div>
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 mx-auto">
         <h2 className="text-2xl">Hello!, I'm</h2>
         <div className="text-container">
           <h2 className="text-3xl md:text-5xl font-bold text">Jahangir Alam</h2>
@@ -56,7 +56,7 @@ const Home = () => {
           className=" bg-black rounded-xl w-[230px] h-[280px] md:w-[300px] md:h-[350px]"
         />
       </div>
-      <div className="rotate-90 hidden md:flex text-xl md:text-2xl">
+      <div className="rotate-90 hidden md:flex text-xl md:text-2xl mx-auto">
         Scroll Down
       </div>
     </div>

@@ -19,7 +19,7 @@ const About = () => {
           />
         </div> */}
         <div className="flex flex-col mx-auto w-[95%] lg:w-[49%] gap-5 ">
-          <div className="flex flex-wrap gap-3 mx-auto">
+          <div className="flex flex-wrap gap-5 mx-auto">
             <div className="w-[250px] md:w-[200px] flex flex-col mx-auto relative items-center rounded-xl duration-1000 h-[250px] md:h-[200px] border bg-green-500  group">
               <h2 className="text-3xl font-bold font-serif group-hover:hidden duration-1000 my-auto md:ml-8 ">
                 Go for Degree
@@ -63,14 +63,17 @@ const About = () => {
             </div>
           </div>
           <h2 className="w-[95%] border p-2 rounded-xl bg-[#4a4a90] hover:bg-transparent duration-1000 hover:shadow-3xl mx-auto text-justify">
-            I'm a Software Engineering Undergradute at the University of
-            Kelaniya. I'm an enthusiastic and driven Software Engineering
-            student seeking a challenging internship opportunity to apply and
-            expand my technical skills. With a strong academic foundation in
-            software engineering and hands-on experience in various programming
-            languages, I am eager to contribute to innovative projects and learn
-            from experienced professionals in the industry. I am a quick learner
-            who is always ready to face challenges.
+            I am a passionate and driven Software Engineering student at
+            SISTec-E Ratibad, University- RGPV, with a strong academic
+            foundation and hands-on experience in both web development and
+            application development. I specialize in building dynamic and
+            responsive web interfaces using React.js, as well as developing
+            mobile applications with React Native. <br />I am actively seeking a
+            challenging internship opportunity where I can leverage my skills in
+            React.js and React Native, contribute to innovative projects, and
+            learn from experienced professionals in the industry. As a quick
+            learner with a strong problem-solving mindset, I am always ready to
+            embrace new challenges and continuously improve my expertise.
           </h2>
         </div>
       </div>

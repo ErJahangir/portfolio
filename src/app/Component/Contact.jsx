@@ -12,7 +12,7 @@ const Contact = () => {
         Contact me
       </h2>
       <div className="flex flex-col mt-4 md:flex-row w-full gap-5">
-        <div className="w-[85%] md:w-[45%] lg:w-[35%] rounded-2xl text-white p-8 flex flex-col justify-center mx-auto border h-[200px]">
+        <div className="w-[85%] md:w-[45%] lg:w-[35%] rounded-2xl text-white p-8 flex flex-col justify-center mx-auto border h-[200px] hover:bg-transparent bg-[#44447c] duration-1000 hover:shadow-2xl">
           <h2 className="flex flex-row items-center gap-3">
             <FaHome />
             Ashoka Garden, Bhopal
@@ -22,7 +22,7 @@ const Contact = () => {
             +91 7557708578
           </h2>
         </div>
-        <div className="w-[85%] md:w-[45%] lg:w-[35%] rounded-2xl border mx-auto p-8 flex flex-col justify-center gap-3 h-[200px]">
+        <div className="w-[85%] md:w-[45%] lg:w-[35%] rounded-2xl border mx-auto p-8 flex flex-col justify-center gap-3 h-[200px] hover:bg-transparent bg-[#44447c] duration-1000 hover:shadow-2xl">
           <h2 className="flex flex-row items-center gap-3 text-[12px] md:text-[15px]">
             <FaLinkedinIn className="text-2xl" />
             linkedin.com/in/jahangircse786

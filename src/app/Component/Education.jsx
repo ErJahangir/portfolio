@@ -10,7 +10,10 @@ const Education = () => {
       </h2>
       <div className="flex flex-wrap gap-2 mx-auto w-full">
         {EducationData.map((item) => (
-          <div className=" w-[95%] md:w-[400px] flex flex-row md:flex-col items-center gap-3 mx-auto hover:shadow-lg rounded-3xl p-5 bg-[#44447c] border-0 duration-1000  hover:bg-transparent hover:border-[1px]">
+          <div
+            key={item.id}
+            className=" w-[95%] md:w-[400px] flex flex-row md:flex-col items-center gap-3 mx-auto hover:shadow-lg rounded-3xl p-5 bg-[#44447c] border-0 duration-1000  hover:bg-transparent hover:border-[1px]"
+          >
             <div>
               <Image
                 alt={item.college}
@@ -20,7 +23,7 @@ const Education = () => {
                 className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] object-cover rounded-2xl"
               />
             </div>
-            <div key={item.id}>
+            <div>
               <h2 className="font-sans text-xl font-semibold">
                 {item.name} - {item.course}
               </h2>

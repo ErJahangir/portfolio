@@ -1,15 +1,3 @@
-// import React from "react";
-
-// const page = () => {
-//   return (
-//     <div className="pt-24">
-//       <h2>hello</h2>
-//     </div>
-//   );
-// };
-
-// export default page;
-
 import Link from "next/link";
 import React from "react";
 import { ProjectData } from "../Component/Data";
@@ -18,7 +6,12 @@ import Image from "next/image";
 const page = () => {
   return (
     <div className="pt-16">
-      <Image src="/Project/image.png" width={2000} height={700} />
+      <Image
+        src="/Project/image.png"
+        width={2000}
+        height={700}
+        alt="Project image"
+      />
       <div className="w-[95%] mb-5  mx-auto flex flex-col items-center">
         <h4 className="text-3xl uppercase border-b-2 mb-6">Projects</h4>
         <div className="flex flex-wrap gap-2 mx-auto w-full">

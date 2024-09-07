@@ -15,6 +15,7 @@ const About = () => {
             height={600}
             src="/second.gif"
             className=" mx-auto"
+            alt="second gif"
           />
         </div>
         <div className="flex flex-col mx-auto w-[95%] lg:w-[49%] gap-5 ">

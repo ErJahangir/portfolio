@@ -1,20 +1,22 @@
 "use client";
+import React, { useEffect, useState } from "react";
 import { ProjectData } from "@/app/Component/Data";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
 
-const page = (props) => {
-  // console.log(props);
-  const [data, setData] = useState("");
-  const [Images, setImage] = useState([]);
-  // console.log("=====>", Images);
+const Page = ({ params }) => {
+  const [data, setData] = useState(null); // Initialized as null for better checks
+  const [images, setImages] = useState([]);
+
   useEffect(() => {
-    const project = ProjectData.find(
-      (item) => item.id === parseInt(props.params.id)
-    );
-    setData(project);
-    setImage(project.skills);
-  }, [props.params.id]);
+    const project = ProjectData.find((item) => item.id === parseInt(params.id));
+    if (project) {
+      setData(project);
+      setImages(project.skills);
+    }
+  }, [params.id]);
+
+  if (!data) return <div>Loading...</div>; // Loading state for better UX
+
   return (
     <div className="pt-16">
       <Image
@@ -24,26 +26,40 @@ const page = (props) => {
         alt="Top image"
       />
       <div className="w-[90%] mx-auto my-4 items-center flex flex-col justify-center gap-4">
-        <h2 className="text-4xl font-bold font-serif underline">{data.Name}</h2>
-        <p>{data.description}</p>
+        <h2 className="text-4xl font-bold font-serif underline">
+          {data?.Name}
+        </h2>
+        <p>{data?.description}</p>
+
         <h2 className="text-3xl font-bold font-serif underline">
-          The Skills which i used
+          The Skills I Used
         </h2>
         <div className="flex flex-wrap gap-4">
-          {Images.map((item) => (
-            <div className="bg-blue-600 p-1 rounded-lg">{item}</div>
+          {images.map((skill, index) => (
+            <div key={index} className="bg-blue-600 p-1 rounded-lg">
+              {skill}
+            </div>
           ))}
         </div>
+
         <div className="flex flex-row gap-3">
           {data.button && (
-            <button className="bg-gradient-to-b from-[#2371c5] to-green-600 px-2 py-1 rounded-md">
+            <a
+              href={data.button}
+              target="_blank"
+              className="bg-gradient-to-b from-[#2371c5] to-green-600 px-2 py-1 rounded-md"
+            >
               GitHub
-            </button>
+            </a>
           )}
           {data.live && (
-            <button className="bg-gradient-to-b from-[#1d6c9a] to-green-600 px-2 py-1 rounded-md">
+            <a
+              href={data.live}
+              target="_blank"
+              className="bg-gradient-to-b from-[#1d6c9a] to-green-600 px-2 py-1 rounded-md"
+            >
               Go Live
-            </button>
+            </a>
           )}
         </div>
       </div>
@@ -51,4 +67,4 @@ const page = (props) => {
   );
 };
 
-export default page;
+export default Page;

@@ -1,155 +1,199 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
-body{
-    background: #1f1f38;
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
-    background-image: url("/climpek.png");
-    line-height: 1.7;
+
+body {
+  background: #1f1f38;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  background-image: url("/climpek.png");
+  line-height: 1.7;
 }
 
 .text-container {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid;
-  }
-  
-  .text {
-    display: inline-block;
-    animation: typing 5s steps(14) infinite, blink 0.75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    0% { width: 0; }
-    50% { width: 13ch; }
-    100% { width: 0; }
-  }
-  
-  @keyframes blink {
-    from, to { border-color: transparent; }
-    50% { border-color: white; }
-  }
-
-  .imagediv{
-    display: flex;
-    flex-direction: row;
-    margin-inline: auto;
-    margin-block: 10px;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    z-index: 100px;
-
-  }
-
-.image{
-
-    position: absolute;
-    background-color: black;
-    
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
 }
-.image:hover{
-    float: left;
-    animation: spin 1s infinite ease-in;
+
+.text {
+  display: inline-block;
+  animation: typing 5s steps(13) infinite, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 11ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.imagediv {
+  display: flex;
+  flex-direction: row;
+  margin-inline: auto;
+  margin-block: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  z-index: 100px;
+}
+
+.image {
+  position: absolute;
+  background-color: black;
+}
+.image:hover {
+  float: left;
+  animation: spin 1s infinite ease-in;
 }
 @keyframes spin {
-    0%{transform: rotate(0deg);}
-    25%{transform: rotate(40deg);}
-    50%{transform: rotate(0deg);}
-    75%{transform: rotate(-40deg);}
-    100%{transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-  .experience__container{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
-.experience__container > div{
-
-    background: rgb(68, 68, 124);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    
+.experience__container > div {
+  background: rgb(68, 68, 124);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 
-.experience__container > div:hover{
-
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-    transition-duration: 1500ms;
+.experience__container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+  transition-duration: 1500ms;
 }
 
-.experience__container > div h3{
-
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primary);
+.experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
 }
 
-.experience__content{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    row-gap: 2rem;
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  row-gap: 2rem;
 }
 
-.experience__details{
-
-    display: flex;
-    gap: 2rem;
+.experience__details {
+  display: flex;
+  gap: 2rem;
 }
 
-.experience__details-icon{
-    margin-top: 6px;
-    color: rgb(115, 194, 234);
+.experience__details-icon {
+  margin-top: 6px;
+  color: rgb(115, 194, 234);
 }
 
 /* Media queries for medium devices(Tablets) */
 
 @media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
 
-    .experience__container{
+  .experience__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
 
-        grid-template-columns: 1fr;
-    }
-
-    .experience__container > div{
-
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-
-    .experience__content{
-
-        padding: 1rem;
-    }
-
+  .experience__content {
+    padding: 1rem;
+  }
 }
 
 /* Media queries for small devices(Mobiles) */
 
 @media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+  }
 
-    .experience__container{
-
-        gap: 1rem;
-    }
-
-    .experience__container > div{
-
-        width: 95%;
-        padding: 2rem 1rem;
-    }
+  .experience__container > div {
+    width: 95%;
+    padding: 2rem 1rem;
+  }
 }
 
+/* Keyframe for cloud movement */
+
+.cloud1-div {
+  position: absolute;
+  animation: animation1 8s infinite ease-out; /* Animation duration and easing */
+  left: 0;
+  font-size: 100px;
+  top: 20px;
+}
+
+.cloud2-div {
+  position: absolute;
+  right: -20px;
+  font-size: 100px;
+  bottom: 20px;
+  animation: animation2 8s infinite ease-in; /* Same animation for cloud2 */
+}
+
+@keyframes animation1 {
+  0% {
+    transform: translateX(0); /* Initial position */
+  }
+  50% {
+    transform: translateX(100px); /* Move 200px to the right */
+  }
+  100% {
+    transform: translateX(0); /* Return to the starting point */
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    transform: translateX(0); /* Initial position */
+  }
+  50% {
+    transform: translateX(-100px); /* Move 200px to the right */
+  }
+  100% {
+    transform: translateX(0); /* Return to the starting point */
+  }
+}

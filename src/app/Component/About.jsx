@@ -6,21 +6,21 @@ import { TbWorld } from "react-icons/tb";
 const About = () => {
   return (
     <div id="About" className="flex flex-col items-center mx-auto w-[95%] ">
-      <h2 className="capitalize text-3xl">Get to know</h2>
+      {/* <h2 className="capitalize text-3xl">Get to know</h2> */}
       <h2 className="text-4xl mb-6 uppercase font-bold">About me</h2>
-      <div className="flex flex-col md:flex-row  mx-auto items-center gap-5 md:gap-8">
-        {/* <div className="imagediv">
+      <div className="flex flex-col-reverse md:flex-row  mx-auto items-center gap-5 md:gap-8">
+        <div className="w-[90%] mx-auto flex md:w-[49%]">
           <Image
-            height={50}
-            width={300}
-            alt="Image"
-            src="/topimage.png"
-            className="image rounded-3xl"
+            width={600}
+            height={600}
+            src="/second.gif"
+            className=" mx-auto"
+            alt="second gif"
           />
-        </div> */}
+        </div>
         <div className="flex flex-col mx-auto w-[95%] lg:w-[49%] gap-5 ">
           <div className="flex flex-wrap gap-5 mx-auto">
-            <div className="w-[250px] md:w-[200px] flex flex-col mx-auto relative items-center rounded-xl duration-1000 h-[250px] md:h-[200px] border bg-green-500  group">
+            <div className="w-[250px] md:w-[200px] flex flex-col mx-auto relative items-center rounded-xl duration-1000 h-[250px] md:h-[200px] border bg-[#4a4a90]  group">
               <h2 className="text-3xl font-bold font-serif group-hover:hidden duration-1000 my-auto md:ml-8 ">
                 Go for Degree
               </h2>
@@ -36,7 +36,7 @@ const About = () => {
                 <h2 className="font-bold text-slate-200">RGPV</h2>
               </div>
             </div>
-            <div className="w-[250px] md:w-[200px] flex flex-col relative items-center rounded-xl duration-1000 h-[250px] md:h-[200px] mx-auto border bg-green-500  group">
+            <div className="w-[250px] md:w-[200px] flex flex-col relative items-center rounded-xl duration-1000 h-[250px] md:h-[200px] mx-auto border bg-[#4a4a90]  group">
               <h2 className="text-3xl font-bold font-serif  group-hover:hidden duration-1000 my-auto md:ml-8">
                 Go for Marks
               </h2>
@@ -48,7 +48,7 @@ const About = () => {
                 <h2 className="font-bold text-slate-200">8.13</h2>
               </div>
             </div>
-            <div className="w-[250px] md:w-[200px] flex flex-col mx-auto relative items-center rounded-xl duration-1000 h-[250px] justify-center md:h-[200px] border bg-green-500  group">
+            <div className="w-[250px] md:w-[200px] flex flex-col mx-auto relative items-center rounded-xl duration-1000 h-[250px] justify-center md:h-[200px] border bg-[#4a4a90]  group">
               <h2 className="text-3xl font-bold font-serif group-hover:hidden duration-1000 my-auto md:ml-8">
                 Go for Domain
               </h2>
@@ -68,13 +68,12 @@ const About = () => {
             foundation and hands-on experience in both web development and
             application development. I specialize in building dynamic and
             responsive web interfaces using React.js, as well as developing
-            mobile applications with React Native. <br />
-            {"    "}I am actively seeking a challenging internship opportunity
-            where I can leverage my skills in React.js and React Native,
-            contribute to innovative projects, and learn from experienced
-            professionals in the industry. As a quick learner with a strong
-            problem-solving mindset, I am always ready to embrace new challenges
-            and continuously improve my expertise.
+            mobile applications with React Native. <br />I am actively seeking a
+            challenging internship opportunity where I can leverage my skills in
+            React.js and React Native, contribute to innovative projects, and
+            learn from experienced professionals in the industry. As a quick
+            learner with a strong problem-solving mindset, I am always ready to
+            embrace new challenges and continuously improve my expertise.
           </h2>
         </div>
       </div>

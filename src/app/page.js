@@ -11,31 +11,13 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="mx-auto font-serif">
-      <div className="">
-        <Navigation />
-      </div>
-      <div className="">
-        <Home />
-      </div>
-      <div>
-        <About />
-      </div>
-      <div>
-        <Experience />
-      </div>
-      <div>
-        <Project />
-      </div>
-      <div>
-        <Education />
-      </div>
-      <div>
-        <Contact />
-      </div>
-      <div>
-        <Footer />
-      </div>
+    <div className="mx-auto  pt-24 font-serif">
+      <Home />
+      <About />
+      <Experience />
+      <Project />
+      <Education />
+      <Contact />
     </div>
   );
 };

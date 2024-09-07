@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center py-10 bg-[#105863]">
-      <h2>JAHANGIR</h2>
+    <div className="flex flex-col font-serif items-center py-10 bg-[#105863]">
+      <h2 className="text-4xl font-bold ">JAHANGIR</h2>
       <div className="grid grid-cols-3 md:grid-flow-col my-4 gap-2">
         <Link href="#">Home</Link>
         <Link href="#About">About</Link>
@@ -19,25 +19,20 @@ const Footer = () => {
           href="https://www.linkedin.com/in/jahangircse786"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-slate-500 p-2 rounded-full text-blue-800 hover:text-white hover:bg-blue-800"
+          className="bg-white p-3 rounded-full text-blue-800 hover:text-white hover:bg-blue-800"
         >
-          <FaLinkedinIn className="text-xl" />
+          <FaLinkedinIn className="text-2xl" />
         </Link>
 
         <Link
           href="https://github.com/ErJahangir"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-slate-500 p-2 rounded-full text-black hover:text-white hover:bg-gray-700"
+          className="bg-white p-3 rounded-full text-black hover:text-white hover:bg-gray-700"
         >
-          <FaGithub className="text-xl" />
+          <FaGithub className="text-2xl" />
         </Link>
       </div>
-      {/* <div className="border-b-2 w-full my-8"></div>
-      <div>
-        <h2>@ All Rights Reserved.</h2>
-        <h2>All Rights Reserved.</h2>
-      </div> */}
     </div>
   );
 };

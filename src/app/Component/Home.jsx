@@ -102,7 +102,7 @@ const Home = () => {
       <div className="flex flex-col md:w-[48%] items-start gap-2 mx-auto">
         <h2 className="text-2xl">Hello!, I'm</h2>
         <div className="text-container">
-          <h2 className="text-3xl md:text-5xl font-bold">Jahangir Alam</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text">Jahangir Alam</h2>
         </div>
         <h2 className="text-xl">{HomeData.position}</h2>
         <h2 className="text-gray-400 text-[15px] text-justify">

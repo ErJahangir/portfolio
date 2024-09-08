@@ -10,57 +10,92 @@ const Navigation = () => {
   return (
     <div className="fixed px-10 bg-black shadow-2xl flex flex-row gap-[70px] justify-between py-1 w-full ">
       {/* <h2 className="text-2xl md:text-3xl font-bold"></h2> */}
-      <Image
-        src="/icon1.png"
-        height={200}
-        width={200}
-        alt="Logo"
-        className="w-28 object-cover h-14 "
-      />
+      <Link href="/">
+        <Image
+          src="/icon1.png"
+          height={200}
+          width={200}
+          alt="Logo"
+          className="w-28 object-cover h-14 hover:border-2 border-white rounded-lg"
+        />
+      </Link>
       <button
         className="absolute pl-[85%]   lg:hidden"
         onClick={() => setShow(!show)}
       >
         <FiAlignJustify className="text-3xl text-white" />
       </button>
-      <div className="hidden lg:flex md:gap-[10px] lg:gap-[45px] items-center md:text-[15px] lg:text-[20px] font-serif text-[#8e8989] ">
-        <Link href="#" className="hover:text-white">
+      <div className="hidden lg:flex md:gap-[10px] lg:gap-[20px] items-center md:text-[15px] lg:text-[20px] font-serif text-[#8e8989] uppercase ">
+        <Link
+          href="/"
+          className="hover:text-white focus:border-b-2 focus:bg-gradient-to-br focus:px-3 focus:from-[#ffffff] focus:to-red-500 focus:text-black"
+        >
           Home
         </Link>
-        <Link href="#About" className="hover:text-white">
+        <Link
+          href="#About"
+          className="hover:text-white focus:border-b-2 focus:bg-gradient-to-br focus:px-3 focus:from-[#ffffff] focus:to-red-500 focus:text-black"
+          // className="hover:text-white focus:text-white focus:underline"
+        >
           About
         </Link>
-        <Link href="#Experience" className="hover:text-white">
+        <Link
+          href="/skills"
+          className="hover:text-white focus:border-b-2 focus:bg-gradient-to-br focus:px-3 focus:from-[#ffffff] focus:to-red-500 focus:text-black"
+          // className="hover:text-white focus:text-white focus:underline"
+        >
+          Skills
+        </Link>
+        <Link
+          href="/experience"
+          className="hover:text-white focus:border-b-2 focus:bg-gradient-to-br focus:px-3 focus:from-[#ffffff] focus:to-red-500 focus:text-black"
+          // className="hover:text-white focus:text-white focus:underline"
+        >
           Experience
         </Link>
-        <Link href="#Project" className="hover:text-white">
+        <Link
+          href="/projectdetails"
+          className="hover:text-white focus:border-b-2 focus:bg-gradient-to-br focus:px-3 focus:from-[#ffffff] focus:to-red-500 focus:text-black"
+          // className="hover:text-white focus:text-white focus:underline"
+        >
           Project
         </Link>
-        <Link href="#Education" className="hover:text-white">
+        <Link
+          href="#Education"
+          className="hover:text-white focus:border-b-2 focus:bg-gradient-to-br focus:px-3 focus:from-[#ffffff] focus:to-red-500 focus:text-black"
+          // className="hover:text-white focus:text-white focus:underline"
+        >
           Education
         </Link>
-        <Link href="#Contact" className="hover:text-white">
+        <Link
+          href="/contactus"
+          className="hover:text-white focus:border-b-2 focus:bg-gradient-to-br focus:px-3 focus:from-[#ffffff] focus:to-red-500 focus:text-black"
+          // className="hover:text-white focus:text-white focus:underline"
+        >
           Contact me
         </Link>
       </div>
       {show ? (
-        <div className="flex z-auto flex-col text-left absolute top-[72px] bg-[#465064] gap-2 lg:hidden text-[20px] text-white w-full p-4 -ml-6">
+        <div className="flex z-auto flex-col text-left absolute top-[65px] bg-[#465064] gap-2 lg:hidden text-[20px] text-white w-full p-4 -ml-10 uppercase font-bold font-serif">
           <Link href="#" onClick={() => setShow(!show)}>
             Home
           </Link>
           <Link href="#About" onClick={() => setShow(!show)}>
             About
           </Link>
-          <Link href="#Experience" onClick={() => setShow(!show)}>
+          <Link href="/skills" onClick={() => setShow(!show)}>
+            Skills
+          </Link>
+          <Link href="/experience" onClick={() => setShow(!show)}>
             Experience
           </Link>
-          <Link href="#Project" onClick={() => setShow(!show)}>
+          <Link href="/projectdetails" onClick={() => setShow(!show)}>
             Project
           </Link>
-          <Link href="#Education" onClick={() => setShow(!show)}>
+          <Link href="/education" onClick={() => setShow(!show)}>
             Education
           </Link>
-          <Link href="#Contact" onClick={() => setShow(!show)}>
+          <Link href="/contactus" onClick={() => setShow(!show)}>
             Contact me
           </Link>
         </div>

@@ -93,6 +93,7 @@ body {
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  /* width: 98%; */
 }
 
 .experience__container > div:hover {

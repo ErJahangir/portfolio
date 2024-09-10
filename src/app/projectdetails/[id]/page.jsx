@@ -29,38 +29,51 @@ const Page = ({ params }) => {
         <h2 className="text-4xl font-bold font-serif underline">
           {data?.Name}
         </h2>
-        <p>{data?.description}</p>
+        <div className="flex flex-col md:flex-row gap-4 items-center">
+          {data.img && (
+            <Image
+              src={data.img}
+              width={600}
+              height={600}
+              alt="image"
+              className="rounded-lg w-[80%] h-[400px] md:w-[48%]"
+            />
+          )}
+          <div className="flex flex-col gap-3">
+            <p className="text-justify">{data?.description}</p>
 
-        <h2 className="text-3xl font-bold font-serif underline">
-          The Skills I Used
-        </h2>
-        <div className="flex flex-wrap gap-4">
-          {images.map((skill, index) => (
-            <div key={index} className="bg-blue-600 p-1 rounded-lg">
-              {skill}
+            <h2 className="text-3xl font-bold font-serif underline">
+              The Skills I Used
+            </h2>
+            <div className="flex flex-wrap gap-4">
+              {images.map((skill, index) => (
+                <div key={index} className="bg-blue-600 p-1 rounded-lg">
+                  {skill}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
 
-        <div className="flex flex-row gap-3">
-          {data.button && (
-            <a
-              href={data.button}
-              target="_blank"
-              className="bg-gradient-to-b from-[#2371c5] to-green-600 px-2 py-1 rounded-md"
-            >
-              GitHub
-            </a>
-          )}
-          {data.live && (
-            <a
-              href={data.live}
-              target="_blank"
-              className="bg-gradient-to-b from-[#1d6c9a] to-green-600 px-2 py-1 rounded-md"
-            >
-              Go Live
-            </a>
-          )}
+            <div className="flex flex-row gap-3">
+              {data.button && (
+                <a
+                  href={data.button}
+                  target="_blank"
+                  className="bg-gradient-to-b from-[#2371c5] to-green-600 px-2 py-1 rounded-md"
+                >
+                  GitHub
+                </a>
+              )}
+              {data.live && (
+                <a
+                  href={data.live}
+                  target="_blank"
+                  className="bg-gradient-to-b from-[#1d6c9a] to-green-600 px-2 py-1 rounded-md"
+                >
+                  Go Live
+                </a>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

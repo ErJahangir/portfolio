@@ -10,7 +10,7 @@ const Project = () => {
       <div className="flex flex-wrap gap-2 mx-auto w-full">
         {ProjectData.slice(0, 3).map((item) => (
           <Link
-            href="/"
+            href="/projectdetails"
             key={item.id}
             className="w-[95%] md:w-[400px] mx-auto flex flex-col items-center justify-center hover:shadow-lg rounded-3xl p-5 bg-[#44447c] duration-[1500ms] hover:border  hover:bg-transparent"
           >

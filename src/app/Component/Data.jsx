@@ -142,7 +142,7 @@ const ProjectData = [
       "React Redux",
       "Redux Toolkits",
     ],
-    img: "",
+    img: "/Project/todo.png",
     description:
       "This is a dynamic and responsive to-do web application built with Next.js for server-side rendering and enhanced performance. The app uses Redux Toolkit for state management, ensuring efficient and scalable handling of tasks. It integrates AsyncStorage to persist task data across sessions, allowing users to store and retrieve their to-do lists even after closing the app. The app supports CRUD (Create, Read, Update, Delete) operations, offers a clean UI with task filtering, and is optimized for both desktop and mobile devices.",
     button: "https://github.com/ErJahangir/PG-LIfe-Application-",
@@ -152,7 +152,6 @@ const ProjectData = [
     id: 2,
     Name: "PG Life",
     skills: ["HTML5", "CSS3", "JavaScript", "BootStrap", "PHP", "DBMS", "SQL"],
-    img: "",
     description:
       "PG Life is a Full-Stack Web Application. This is a project that I was assigned to make during my Internshala Full Stack Web Development Internship Training. got the guidance, and following that I made this web application with my own understanding and knowledge. It is customized according to what I thought would be better functionalities in this app, from the user perspective",
     button: "https://github.com/ErJahangir/PG-LIfe-Application-",
@@ -169,7 +168,6 @@ const ProjectData = [
       "NPM Librasy",
       "Firebase",
     ],
-    img: "",
     description:
       "The Grochouse Mobile Application, developed with React Native, enhances the grocery shopping experience through seamless navigation, efficient FlatList rendering, and custom modals. Utilizing library stylesheets for consistent design and robust API integration for real-time updates, the app ensures fresh and relevant content. Comprehensive API testing guarantees reliable and secure data transactions.",
   },
@@ -177,7 +175,7 @@ const ProjectData = [
     id: 4,
     Name: "viracore.launchmysite.in",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
-    img: "",
+    img: "/Project/viracore.png",
     description:
       "Viracore is inter-linked network of individuals, groups, and societies around the world. Viracore provides the platform to communicate and know more about groups in the world. I used next js, javascript and tailwind CSS for developing this site. You can also check live project on click project name or can type to check.",
 
@@ -187,8 +185,7 @@ const ProjectData = [
     id: 5,
     Name: "navniketan.launchmysite.in",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
-
-    img: "",
+    img: "/Project/navniketan.png",
     description:
       "Shri nav niketan is higher secondary school. I worked on that site. I used next js, javascript and Tailwind CSS. And also connected it to CMS for backend or for API integration. You can also check live project on click project name or can type to check.",
     live: "https://navniketan.launchmysite.in/",
@@ -197,8 +194,7 @@ const ProjectData = [
     id: 6,
     Name: "drumang.launchmysite.in",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
-
-    img: "",
+    img: "/Project/drumang.png",
     description:
       "Shri nav niketan is higher secondary school. I worked on that site. I used next js, javascript and Tailwind CSS. And also connected it to CMS for backend or for API integration. You can also check live project on click project name or can type to check.",
     live: "https://drumang.launchmysite.in/",
@@ -207,8 +203,7 @@ const ProjectData = [
     id: 7,
     Name: "Single Page design",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
-
-    img: "",
+    img: "/Project/single.png",
     description:
       "A responsive React.js web app showcasing component-based architecture, state management, and hooks. It integrates external APIs for dynamic content, handles user interactions with forms, and features conditional rendering. Styled with Tailwind CSS for a mobile-first design.",
     live: "https://singlepagewebsite-henna.vercel.app/",

@@ -74,7 +74,7 @@ const Page = () => {
           </div>
           <div>
             <h1 className="text-2xl font-bold">Check it</h1>
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-wrap gap-3">
               <h2>Email</h2>
               <h2>Facebook</h2>
               <h2>LinkedIn</h2>
@@ -147,8 +147,6 @@ const Page = () => {
       </div>
 
       <iframe
-        width="1500"
-        height="400"
         id="gmap_canvas"
         src="https://maps.google.com/maps?q=famous+restaurant%2C+ashoka+garden+thana&t=&z=13&ie=UTF8&iwloc=&output=embed"
         frameBorder="0"
@@ -156,6 +154,7 @@ const Page = () => {
         marginHeight="0"
         marginWidth="0"
         title="Google Maps"
+        className="w-full h-96"
       ></iframe>
     </div>
   );

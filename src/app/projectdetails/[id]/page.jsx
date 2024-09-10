@@ -26,7 +26,7 @@ const Page = ({ params }) => {
         alt="Top image"
       />
       <div className="w-[90%] mx-auto my-4 items-center flex flex-col justify-center gap-4">
-        <h2 className="text-4xl font-bold font-serif underline">
+        <h2 className="text-2xl md:text-4xl font-bold font-serif underline">
           {data?.Name}
         </h2>
         <div className="flex flex-col md:flex-row gap-4 items-center">
@@ -36,10 +36,10 @@ const Page = ({ params }) => {
               width={600}
               height={600}
               alt="image"
-              className="rounded-lg w-[80%] h-[400px] md:w-[48%]"
+              className="rounded-lg w-[98%] h-[400px] md:w-[48%]"
             />
           )}
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 items-center">
             <p className="text-justify">{data?.description}</p>
 
             <h2 className="text-3xl font-bold font-serif underline">

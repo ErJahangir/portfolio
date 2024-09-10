@@ -7,12 +7,12 @@ const Footer = () => {
     <div className="flex flex-col font-serif items-center py-10 bg-[#105863]">
       <h2 className="text-4xl font-bold ">JAHANGIR</h2>
       <div className="grid grid-cols-3 md:grid-flow-col my-4 gap-2">
-        <Link href="#">Home</Link>
-        <Link href="#About">About</Link>
-        <Link href="#Experience">Experience</Link>
-        <Link href="#Project">Projext</Link>
-        <Link href="#Education">Education</Link>
-        <Link href="#Contact">Contact me</Link>
+        <Link href="/">Home</Link>
+        <Link href="/#About">About</Link>
+        <Link href="/experience">Experience</Link>
+        <Link href="/projectdetails">Projext</Link>
+        <Link href="/#Education">Education</Link>
+        <Link href="/contactus">Contact me</Link>
       </div>
       <div className="flex flex-row gap-3">
         <Link

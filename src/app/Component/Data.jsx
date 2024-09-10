@@ -196,7 +196,7 @@ const ProjectData = [
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
     img: "/Project/drumang.png",
     description:
-      "Shri nav niketan is higher secondary school. I worked on that site. I used next js, javascript and Tailwind CSS. And also connected it to CMS for backend or for API integration. You can also check live project on click project name or can type to check.",
+      "I developed a modern, responsive website for Dr. Umang using Next.js, React.js, HTML, Tailwind CSS, and other cutting-edge technologies. The site features a clean and intuitive design that enhances user experience while maintaining fast performance. Tailwind CSS was utilized for efficient styling, enabling a consistent and professional look. The website is fully optimized for SEO and mobile devices, ensuring accessibility across platforms. Leveraging Next.js allowed for server-side rendering, boosting site speed and improving search engine rankings. This project showcases a blend of robust frontend development and user-friendly design.",
     live: "https://drumang.launchmysite.in/",
   },
   {

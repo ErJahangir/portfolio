@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className="pt-16">
       <Image
-        src="/Project/image.png"
+        src="/Project/top.png"
         width={2000}
         height={700}
         alt="Project image"

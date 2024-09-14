@@ -6,7 +6,7 @@ const HomeData = {
   resume: "/new-resume.pdf",
   github: "https://github.com/ErJahangir",
   linkedIn: "https://www.linkedin.com/in/jahangircse786",
-  email: "mailto:jahangiralamnke786@gmail.com",
+  email: "jahangiralamnke786@gmail.com",
 };
 const homeSkills = [
   "Web Development",
@@ -146,10 +146,26 @@ const ProjectData = [
     description:
       "This is a dynamic and responsive to-do web application built with Next.js for server-side rendering and enhanced performance. The app uses Redux Toolkit for state management, ensuring efficient and scalable handling of tasks. It integrates AsyncStorage to persist task data across sessions, allowing users to store and retrieve their to-do lists even after closing the app. The app supports CRUD (Create, Read, Update, Delete) operations, offers a clean UI with task filtering, and is optimized for both desktop and mobile devices.",
     button: "https://github.com/ErJahangir/PG-LIfe-Application-",
-    live: "https://todo-appjahangir.vercel.app/",
+    live: "https://todo-redux-toolkits.vercel.app/",
   },
   {
     id: 2,
+    Name: "Weather App",
+    skills: [
+      "Tailwind Css",
+      "Next JS",
+      "JavaScript",
+      "React Redux",
+      "Redux Toolkits",
+    ],
+    img: "/Project/image.png",
+    description:
+      "This web application provides real-time weather updates for any location worldwide. Built with Next.js for server-side rendering and optimized performance, it leverages Tailwind CSS for a responsive and modern UI. The app integrates a free weather API to fetch current weather conditions, including temperature, humidity, wind speed, and more. With an intuitive user interface and smooth navigation, users can easily search for any city and receive detailed weather information instantly.",
+    button: "https://github.com/ErJahangir/weather",
+    live: "https://weather-using-redux.vercel.app/",
+  },
+  {
+    id: 3,
     Name: "PG Life",
     skills: ["HTML5", "CSS3", "JavaScript", "BootStrap", "PHP", "DBMS", "SQL"],
     description:
@@ -157,7 +173,7 @@ const ProjectData = [
     button: "https://github.com/ErJahangir/PG-LIfe-Application-",
   },
   {
-    id: 3,
+    id: 4,
     Name: "Grochouse Application",
     skills: [
       "JavaScript",
@@ -172,7 +188,7 @@ const ProjectData = [
       "The Grochouse Mobile Application, developed with React Native, enhances the grocery shopping experience through seamless navigation, efficient FlatList rendering, and custom modals. Utilizing library stylesheets for consistent design and robust API integration for real-time updates, the app ensures fresh and relevant content. Comprehensive API testing guarantees reliable and secure data transactions.",
   },
   {
-    id: 4,
+    id: 5,
     Name: "viracore.launchmysite.in",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
     img: "/Project/viracore.png",
@@ -182,7 +198,7 @@ const ProjectData = [
     live: "https://viracore.launchmysite.in/",
   },
   {
-    id: 5,
+    id: 6,
     Name: "navniketan.launchmysite.in",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
     img: "/Project/navniketan.png",
@@ -191,7 +207,7 @@ const ProjectData = [
     live: "https://navniketan.launchmysite.in/",
   },
   {
-    id: 6,
+    id: 7,
     Name: "drumang.launchmysite.in",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
     img: "/Project/drumang.png",
@@ -200,7 +216,7 @@ const ProjectData = [
     live: "https://drumang.launchmysite.in/",
   },
   {
-    id: 7,
+    id: 8,
     Name: "Single Page design",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
     img: "/Project/single.png",

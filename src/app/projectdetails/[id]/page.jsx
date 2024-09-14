@@ -20,7 +20,7 @@ const Page = ({ params }) => {
   return (
     <div className="pt-16">
       <Image
-        src="/Project/image.png"
+        src="/Project/top.png"
         height={2000}
         width={2000}
         alt="Top image"

@@ -1,6 +1,18 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { IoMdMail } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaGithubSquare,
+  FaInstagram,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import Link from "next/link";
 
 const Page = () => {
   const [formData, setFormData] = useState({
@@ -62,24 +74,69 @@ const Page = () => {
         priority
       />
       <div className="font-serif flex flex-col md:flex-row mx-auto">
-        <div className="flex flex-col w-full p-5 gap-7 md:w-[50%] mx-auto justify-center bg-gradient-to-tr from-blue-600 to-green-600">
+        <div className="flex flex-col w-full p-5 pl-11 gap-7 md:w-[50%] mx-auto justify-center bg-gradient-to-tr from-blue-600 to-green-600">
           <div>
             <h2 className="text-2xl font-bold">Let's Talk</h2>
-            <p>description</p>
+            <p className="text-gray-200 text-[15px] text-justify">
+              I'd love to hear from you! Whether you have a project in mind,
+              questions, or just want to connect, feel free to send me a
+              message. I'm always open to collaborating on exciting projects,
+              offering guidance, or discussing new opportunities. Fill out the
+              form below, and I'll get back to you as soon as possible.
+            </p>
           </div>
           <div>
             <h2 className="text-2xl font-bold">It's me</h2>
-            <h2>Jahangir Alam</h2>
-            <h2>jahangiralamnk786@gmail.com</h2>
+
+            {/* <li className="text-gray-300 text-[15px]">Jahangir Alam</li> */}
+            <li className="text-gray-300 text-[15px]">A web Developer</li>
+            <li className="text-gray-300 text-[15px]">
+              A mobile Application developer
+            </li>
+            <li className="text-gray-300 font-serif text-[15px]">
+              <Link href="mailto:jahangiralamnke786@gmail.com">
+                jahangiralamnk786@gmail.com
+              </Link>
+            </li>
           </div>
           <div>
-            <h1 className="text-2xl font-bold">Check it</h1>
-            <div className="flex flex-wrap gap-3">
-              <h2>Email</h2>
-              <h2>Facebook</h2>
-              <h2>LinkedIn</h2>
-              <h2>Instagram</h2>
-              <h2>GitHub</h2>
+            <h1 className="text-2xl font-bold mb-6">Check it</h1>
+            <div className="flex md:grid-cols-6 items-center mx-auto gap-2">
+              <Link
+                href="mailto:jahangiralamnke786@gmail.com"
+                target="_blank"
+                className=" bg-gray-300 text-blue-500 p-2 rounded-full hover:bg-green-600 hover:text-white duration-1000 hover:shadow-lg hover:border "
+              >
+                <IoMdMail className="text-3xl" />
+              </Link>
+              <Link
+                href="https://www.facebook.com/prem.diwana.9484941"
+                target="_blank"
+                className=" bg-blue-800 text-red-200 p-2 rounded-full hover:bg-green-600 hover:text-blue-700 duration-1000 hover:shadow-lg hover:border "
+              >
+                <FaFacebookF className="text-3xl" />
+              </Link>
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/in/jahangircse786"
+                className=" bg-gray-300 text-blue-700 p-2 rounded-full hover:bg-blue-600 hover:text-white duration-1000 hover:shadow-lg hover:border "
+              >
+                <FaLinkedinIn className="text-3xl" />
+              </Link>
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/jahangir.__/"
+                className=" bg-pink-500 text-white p-2 rounded-full hover:bg-gray-400 hover:text-pink-950 duration-1000 hover:shadow-lg hover:border "
+              >
+                <FaInstagram className="text-3xl" />
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/ErJahangir"
+                className=" bg-blue-950 text-white p-2 rounded-full hover:bg-gray-400 hover:text-blue-950 duration-1000 hover:shadow-lg hover:border "
+              >
+                <FaGithub className="text-3xl" />
+              </Link>
             </div>
           </div>
         </div>

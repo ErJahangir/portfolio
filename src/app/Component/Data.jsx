@@ -134,6 +134,22 @@ const ExperienceData = [
 const ProjectData = [
   {
     id: 1,
+    Name: "weather web app",
+    skills: [
+      "Tailwind Css",
+      "Next JS",
+      "JavaScript",
+      "React Redux",
+      "Redux Toolkits",
+    ],
+    img: "/Project/image.png",
+    description:
+      "This web application provides real-time weather updates for any location worldwide. Built with Next.js for server-side rendering and optimized performance, it leverages Tailwind CSS for a responsive and modern UI. The app integrates a free weather API to fetch current weather conditions, including temperature, humidity, wind speed, and more. With an intuitive user interface and smooth navigation, users can easily search for any city and receive detailed weather information instantly.",
+    button: "https://github.com/ErJahangir/weather",
+    live: "https://weather-using-redux.vercel.app/",
+  },
+  {
+    id: 2,
     Name: "Todo List",
     skills: [
       "Tailwind Css",
@@ -142,11 +158,11 @@ const ProjectData = [
       "React Redux",
       "Redux Toolkits",
     ],
-    img: "/Project/todo.png",
+    img: "/Project/image.png",
     description:
       "This is a dynamic and responsive to-do web application built with Next.js for server-side rendering and enhanced performance. The app uses Redux Toolkit for state management, ensuring efficient and scalable handling of tasks. It integrates AsyncStorage to persist task data across sessions, allowing users to store and retrieve their to-do lists even after closing the app. The app supports CRUD (Create, Read, Update, Delete) operations, offers a clean UI with task filtering, and is optimized for both desktop and mobile devices.",
     button: "https://github.com/ErJahangir/PG-LIfe-Application-",
-    live: "https://todo-appjahangir.vercel.app/",
+    live: "https://todo-redux-toolkits.vercel.app/",
   },
   {
     id: 2,

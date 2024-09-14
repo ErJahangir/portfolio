@@ -8,7 +8,7 @@ import Image from "next/image";
 const Navigation = () => {
   const [show, setShow] = useState(false);
   return (
-    <div className="fixed px-3 md:px-10 bg-black shadow-2xl flex flex-row gap-[70px] justify-between py-1 w-full ">
+    <div className="fixed z-50 px-3 md:px-10 bg-black shadow-2xl flex flex-row gap-[70px] justify-between py-1 w-full ">
       {/* <h2 className="text-2xl md:text-3xl font-bold"></h2> */}
       <Link href="/">
         <Image

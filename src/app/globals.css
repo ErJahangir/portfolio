@@ -93,7 +93,6 @@ body {
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
-  /* width: 98%; */
 }
 
 .experience__container > div:hover {
@@ -126,8 +125,6 @@ body {
   color: rgb(115, 194, 234);
 }
 
-/* Media queries for medium devices(Tablets) */
-
 @media screen and (max-width: 1024px) {
   .experience__container {
     grid-template-columns: 1fr;
@@ -144,8 +141,6 @@ body {
   }
 }
 
-/* Media queries for small devices(Mobiles) */
-
 @media screen and (max-width: 600px) {
   .experience__container {
     gap: 1rem;
@@ -157,11 +152,9 @@ body {
   }
 }
 
-/* Keyframe for cloud movement */
-
 .cloud1-div {
   position: absolute;
-  animation: animation1 8s infinite ease-out; /* Animation duration and easing */
+  animation: animation1 8s infinite ease-out;
   left: 0;
   font-size: 100px;
   top: 20px;
@@ -172,29 +165,47 @@ body {
   right: -20px;
   font-size: 100px;
   bottom: 20px;
-  animation: animation2 8s infinite ease-in; /* Same animation for cloud2 */
+  animation: animation2 8s infinite ease-in;
 }
 
 @keyframes animation1 {
   0% {
-    transform: translateX(0); /* Initial position */
+    transform: translateX(0);
   }
   50% {
-    transform: translateX(100px); /* Move 200px to the right */
+    transform: translateX(100px);
   }
   100% {
-    transform: translateX(0); /* Return to the starting point */
+    transform: translateX(0);
   }
 }
 
 @keyframes animation2 {
   0% {
-    transform: translateX(0); /* Initial position */
+    transform: translateX(0);
   }
   50% {
-    transform: translateX(-100px); /* Move 200px to the right */
+    transform: translateX(-100px);
   }
   100% {
-    transform: translateX(0); /* Return to the starting point */
+    transform: translateX(0);
   }
+}
+
+.img {
+  box-shadow: 1px 1px 35px rgba(115, 194, 234, 0.8);
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(#443333, #000);
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  transform: scale(1);
+}
+
+.img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 40px #8882c4, 0px 0px 100px #473f5e;
+  background: linear-gradient(#553333, #111);
+  filter: hue-rotate(15deg) brightness(1.2);
 }

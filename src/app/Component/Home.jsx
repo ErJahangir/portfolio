@@ -157,7 +157,7 @@ const Home = () => {
 
       {/* Right section with clouds and image */}
       <div className="md:w-[48%] relative flex items-center justify-center">
-        <div className="absolute top-0 left-0 cloud1-div">
+        {/* <div className="absolute top-0 left-0 cloud1-div">
           <CiCloudDrizzle className="cloud1 text-gray-400" />
         </div>
 
@@ -171,6 +171,15 @@ const Home = () => {
 
         <div className="absolute bottom-0 right-0 cloud2-div">
           <CiCloudDrizzle className="cloud2 text-gray-400" />
+        </div> */}
+        <div className="shadow-2xl rounded-full shadow-blue-800  ">
+          <Image
+            src="/me.png"
+            height={400}
+            width={400}
+            alt="Profile Image"
+            className="img"
+          />
         </div>
       </div>
     </div>

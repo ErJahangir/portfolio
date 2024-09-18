@@ -9,8 +9,7 @@ const Experience = () => {
       id="Experience"
       className="flex flex-col items-center my-9 gap-6 w-[95%] mx-auto"
     >
-      {/* <h5 className="text-xl uppercase">The skills I have</h5> */}
-      <h2 className="text-3xl uppercase border-b-2">
+      <h2 className="text-3xl uppercase border-b-2 text-center ">
         My Skills & My Experience
       </h2>
 

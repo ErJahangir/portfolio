@@ -52,7 +52,7 @@ const Footer = () => {
           </h2>
           <div className="flex items-center flex-row gap-2 ">
             <IoMdCall />
-            <Link href="7557708578" className="font-sans">
+            <Link href="tel:+917557708578" className="font-sans">
               +91 7557708578
             </Link>
           </div>

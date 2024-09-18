@@ -2,7 +2,7 @@ const HomeData = {
   name: "Jahangir Alam",
   About:
     " Motivated and detail-oriented Next js and React Native Developer with experience in building responsive applications, API integration, and frontend development using React.js and Next.js. Seeking to leverage my skills in mobile and web application development to contribute to a dynamic team and deliver high-quality solutions in a growth-oriented environment.",
-  position: "Software Engineering",
+  position: "Software Developer",
   resume: "/new-resume.pdf",
   github: "https://github.com/ErJahangir",
   linkedIn: "https://www.linkedin.com/in/jahangircse786",

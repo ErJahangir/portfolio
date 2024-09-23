@@ -105,35 +105,35 @@ const Page = () => {
               <Link
                 href="mailto:jahangiralamnke786@gmail.com"
                 target="_blank"
-                className=" bg-gray-300 text-blue-500 p-2 rounded-full hover:bg-green-600 hover:text-white duration-1000 hover:shadow-lg hover:border "
+                className=" bg-gray-300 text-blue-500 p-2 rounded-full hover:bg-black hover:text-white duration-1000 hover:shadow-lg "
               >
                 <IoMdMail className="text-3xl" />
               </Link>
               <Link
                 href="https://www.facebook.com/prem.diwana.9484941"
                 target="_blank"
-                className=" bg-blue-800 text-red-200 p-2 rounded-full hover:bg-green-600 hover:text-blue-700 duration-1000 hover:shadow-lg hover:border "
+                className=" bg-blue-800 text-red-200 p-2 rounded-full hover:bg-white hover:text-blue-700 duration-1000 hover:shadow-lg "
               >
                 <FaFacebookF className="text-3xl" />
               </Link>
               <Link
                 target="_blank"
                 href="https://www.linkedin.com/in/jahangircse786"
-                className=" bg-gray-300 text-blue-700 p-2 rounded-full hover:bg-blue-600 hover:text-white duration-1000 hover:shadow-lg hover:border "
+                className=" bg-gray-300 text-blue-700 p-2 rounded-full hover:bg-blue-600 hover:text-white duration-1000 hover:shadow-lg "
               >
                 <FaLinkedinIn className="text-3xl" />
               </Link>
               <Link
                 target="_blank"
                 href="https://www.instagram.com/jahangir.__/"
-                className=" bg-pink-500 text-white p-2 rounded-full hover:bg-gray-400 hover:text-pink-950 duration-1000 hover:shadow-lg hover:border "
+                className=" bg-pink-500 text-white p-2 rounded-full hover:bg-white hover:text-pink-950 duration-1000 hover:shadow-lg "
               >
                 <FaInstagram className="text-3xl" />
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/ErJahangir"
-                className=" bg-blue-950 text-white p-2 rounded-full hover:bg-gray-400 hover:text-blue-950 duration-1000 hover:shadow-lg hover:border "
+                className=" bg-blue-950 text-white p-2 rounded-full hover:bg-gray-400 hover:text-blue-950 duration-1000 hover:shadow-lg "
               >
                 <FaGithub className="text-3xl" />
               </Link>

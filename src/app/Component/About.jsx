@@ -7,20 +7,8 @@ import { TbWorld } from "react-icons/tb";
 const About = () => {
   return (
     <div id="About" className="flex flex-col items-center mx-auto w-[95%] ">
-      {/* <h2 className="capitalize text-3xl">Get to know</h2> */}
-      <h2 className="text-4xl mb-6 uppercase font-bold">About me</h2>
+      <h2 className="text-4xl mb-6 mt-6 uppercase font-bold  ">About me</h2>
       <div className="flex flex-col-reverse md:flex-row  mx-auto items-center gap-5 md:gap-8">
-        {/* <div className="w-[90%] mx-auto flex md:w-[49%]">
-          <Image
-            width={600}
-            height={600}
-            src="/second.gif"
-            className=" mx-auto"
-            alt="second gif"
-            unoptimized
-          />
-        </div> */}
-
         <div className="md:w-[48%] relative flex items-center justify-center">
           <div className="absolute top-0 left-0 cloud1-div">
             <CiCloudDrizzle className="cloud1 text-gray-400" />

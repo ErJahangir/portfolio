@@ -165,7 +165,7 @@ const ProjectData = [
     live: "https://todo-redux-toolkits.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     Name: "PG Life",
     skills: ["HTML5", "CSS3", "JavaScript", "BootStrap", "PHP", "DBMS", "SQL"],
     description:
@@ -173,7 +173,7 @@ const ProjectData = [
     button: "https://github.com/ErJahangir/PG-LIfe-Application-",
   },
   {
-    id: 3,
+    id: 4,
     Name: "Grochouse Application",
     skills: [
       "JavaScript",
@@ -188,7 +188,7 @@ const ProjectData = [
       "The Grochouse Mobile Application, developed with React Native, enhances the grocery shopping experience through seamless navigation, efficient FlatList rendering, and custom modals. Utilizing library stylesheets for consistent design and robust API integration for real-time updates, the app ensures fresh and relevant content. Comprehensive API testing guarantees reliable and secure data transactions.",
   },
   {
-    id: 4,
+    id: 5,
     Name: "viracore.launchmysite.in",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
     img: "/Project/viracore.png",
@@ -198,7 +198,7 @@ const ProjectData = [
     live: "https://viracore.launchmysite.in/",
   },
   {
-    id: 5,
+    id: 6,
     Name: "navniketan.launchmysite.in",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
     img: "/Project/navniketan.png",
@@ -207,7 +207,7 @@ const ProjectData = [
     live: "https://navniketan.launchmysite.in/",
   },
   {
-    id: 6,
+    id: 7,
     Name: "drumang.launchmysite.in",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
     img: "/Project/drumang.png",
@@ -216,7 +216,7 @@ const ProjectData = [
     live: "https://drumang.launchmysite.in/",
   },
   {
-    id: 7,
+    id: 8,
     Name: "Single Page design",
     skills: ["Tailwind Css", "Next JS", "JavaScript"],
     img: "/Project/single.png",

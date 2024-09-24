@@ -158,7 +158,7 @@ const ProjectData = [
       "React Redux",
       "Redux Toolkits",
     ],
-    img: "/Project/image.png",
+    img: "/Project/todo.png",
     description:
       "This is a dynamic and responsive to-do web application built with Next.js for server-side rendering and enhanced performance. The app uses Redux Toolkit for state management, ensuring efficient and scalable handling of tasks. It integrates AsyncStorage to persist task data across sessions, allowing users to store and retrieve their to-do lists even after closing the app. The app supports CRUD (Create, Read, Update, Delete) operations, offers a clean UI with task filtering, and is optimized for both desktop and mobile devices.",
     button: "https://github.com/ErJahangir/PG-LIfe-Application-",

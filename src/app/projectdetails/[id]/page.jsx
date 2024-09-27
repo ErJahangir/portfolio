@@ -33,8 +33,9 @@ const Page = ({ params }) => {
           {data.img && (
             <Image
               src={data.img}
-              width={600}
-              height={600}
+              width={1000}
+              height={1000}
+              quality={100}
               alt="image"
               className="rounded-lg w-[98%] h-[400px] md:w-[48%]"
             />

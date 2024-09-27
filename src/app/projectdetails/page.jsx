@@ -9,7 +9,8 @@ const page = () => {
       <Image
         src="/Project/top.png"
         width={2000}
-        height={700}
+        height={1000}
+        quality={80}
         alt="Project image"
       />
       <div className="w-[95%] mb-5  mx-auto flex flex-col items-center">

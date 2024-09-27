@@ -225,6 +225,15 @@ const ProjectData = [
     live: "https://singlepagewebsite-henna.vercel.app/",
     button: "https://github.com/ErJahangir/singlepagewebsite",
   },
+  {
+    id: 9,
+    Name: "CRUD opration Node js",
+    skills: ["Node js", "Express js", "MongoDB","EJS","Multer"],
+    img: "/Project/crud.png",
+    description:
+      "This project is a web application built using Node.js, Express.js, and MongoDB to implement full CRUD (Create, Read, Update, Delete) operations. It features a simple yet efficient backend to handle database transactions, allowing users to create, view, edit, and delete records in a MongoDB database. The front-end of the application is rendered using EJS (Embedded JavaScript) templates, enabling dynamic HTML rendering and seamless user interaction. This project is ideal for managing data-driven operations such as user profiles, product listings, or inventory management, showcasing a robust understanding of RESTful APIs, database integration, and server-side development with Node.js.",
+    button: "https://github.com/ErJahangir/CRUD-Nodejs",
+  },
 ];
 
 const EducationData = [

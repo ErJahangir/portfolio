@@ -1,18 +1,20 @@
 const HomeData = {
   name: "Jahangir Alam",
   About:
-    " Motivated and detail-oriented Next js and React Native Developer with experience in building responsive applications, API integration, and frontend development using React.js and Next.js. Seeking to leverage my skills in mobile and web application development to contribute to a dynamic team and deliver high-quality solutions in a growth-oriented environment.",
-  position: "Software Developer",
-  resume: "/new-resume.pdf",
+    "I’m a React Native Developer with 2+ years of experience building scalable and production-ready mobile applications for Android and iOS. I have worked on real-world applications with advanced features such as payment integrations (Google Pay & Apple Pay), push notifications, and secure authentication systems (Google Sign-In & Apple Sign-In). I focus on writing clean, scalable code and delivering high-performance applications.",
+  position: "React Native Developer (Android & iOS)",
+  resume: "/resume.pdf",
   github: "https://github.com/ErJahangir",
   linkedIn: "https://www.linkedin.com/in/jahangircse786",
   email: "jahangiralamnke786@gmail.com",
 };
 const homeSkills = [
-  "Web Development",
-  "Application Development",
-  "Redux Toolkits",
-  "API Intregation",
+  "React Native (Android & iOS)",
+  "Payments (Google & Apple Pay)",
+  "Push Notifications (FCM)",
+  "Authentication (Google & Apple)",
+  "Next.js & React.js",
+  "Redux Toolkit & State Management",
 ];
 const Skills = [
   {
@@ -117,17 +119,35 @@ const Skills = [
 const ExperienceData = [
   {
     id: 1,
-    position: "React Native",
-    company: "Abstinent Research and Technology",
+    position: "React Native Developer",
+    company: "HangingPanda Private Limited · Noida (Full-time)",
+    duration: "Apr 2025 - Present · 1 yr",
     about:
-      "I worked as a React native Developer at Abstinent Research & Technology, Bhopal. I worked on two project 1. EMRS and 2. Grocery application both were based on React native, my role was to responsive UI and API integration.I learn many things but main skills are make responsive UI, integrate API, API Testing, Navigation, Vector icon, async storage etc.",
+      "Developed cross-platform mobile applications for Android & iOS using React Native. Integrated payment systems including Google Pay and Apple Pay. Worked with Near-field Communication (NFC) and Redux Toolkit.",
   },
   {
     id: 2,
-    position: "React js",
-    company: "Maitretech Solution",
+    position: "React native intern",
+    company: "HangingPanda Private Limited · Noida (Internship)",
+    duration: "Dec 2024 - Mar 2025 · 4 mos",
     about:
-      "I worked on many projects like bhopal acedmy site, shrina niketan hr sec school site, and more. My role was frontend development. I worked on react js and next js as well for developing web pages",
+      "Assisted in building mobile applications using React Native. Worked on UI development and API integration. Gained deep experience in JavaScript and React Native ecosystem.",
+  },
+  {
+    id: 3,
+    position: "React Developer",
+    company: "Eulogik · Bhopal (Internship)",
+    duration: "Oct 2024 - Nov 2024 · 2 mos",
+    about:
+      "Developed frontend features using React.js. Built responsive UI components and managed application state using Redux Toolkit.",
+  },
+  {
+    id: 4,
+    position: "React Native Developer",
+    company: "ART - Abstinent Research & Technologies · Bhopal (Internship)",
+    duration: "Mar 2024 - Jul 2024 · 5 mos",
+    about:
+      "Built mobile app features using React Native. Worked on UI implementation, navigation, and core feature development using CSS3 and JavaScript.",
   },
 ];
 

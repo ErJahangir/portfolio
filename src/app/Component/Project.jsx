@@ -1,53 +1,106 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { ProjectData } from "./Data";
+import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Project = () => {
   return (
-    <div id="Project" className="w-[95%] mx-auto flex flex-col items-center">
-      {/* <h2 className="text-3xl uppercase">My Recent Works</h2> */}
-      <h4 className="text-3xl uppercase border-b-2 mb-6">Projects</h4>
-      <div className="flex flex-wrap gap-2 mx-auto w-full">
-        {ProjectData.slice(0, 3).map((item) => (
+    <section id="Project" className="py-20 relative overflow-hidden">
+      <div className="container mx-auto px-6 md:px-12">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h4 className="text-primary tracking-[0.3em] uppercase mb-2">
+            My Works
+          </h4>
+          <h2 className="text-4xl md:text-5xl font-bold">Featured Projects</h2>
+          <div className="h-1 w-20 bg-primary mx-auto mt-4 rounded-full"></div>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {ProjectData.slice(0, 3).map((item, index) => (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="glass rounded-3xl overflow-hidden group hover:border-primary/50 transition-all flex flex-col"
+            >
+              <div className="p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                  {item.Name}
+                </h3>
+
+                <p className="text-light text-sm text-justify mb-6 line-clamp-4">
+                  {item.description}
+                </p>
+
+                {/* Skills/Tags */}
+                <div className="flex flex-wrap gap-2 mb-8 mt-auto">
+                  {item.skills?.slice(0, 3).map((skill, i) => (
+                    <span
+                      key={i}
+                      className="text-[10px] uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded text-light"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                  {item.skills?.length > 3 && (
+                    <span className="text-[10px] text-primary">
+                      +{item.skills.length - 3} more
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex gap-4">
+                  {item.button && (
+                    <Link
+                      href={item.button}
+                      target="_blank"
+                      className="flex items-center gap-2 text-sm font-bold text-white/50 hover:text-white transition-colors"
+                    >
+                      <FaGithub /> GitHub
+                    </Link>
+                  )}
+                  {item.live && (
+                    <Link
+                      href={item.live}
+                      target="_blank"
+                      className="flex items-center gap-2 text-sm font-bold text-primary hover:text-white transition-colors ml-auto"
+                    >
+                      <FaExternalLinkAlt className="text-xs" /> Live Demo
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="text-center mt-16"
+        >
           <Link
             href="/projectdetails"
-            key={item.id}
-            className="w-[95%] md:w-[400px] mx-auto flex flex-col items-center justify-center hover:shadow-lg rounded-3xl p-5 bg-[#44447c] duration-[1500ms] hover:border  hover:bg-transparent"
+            className="group relative inline-flex items-center justify-center px-12 py-4 font-bold text-primary transition-all duration-300 border border-primary/50 rounded-full hover:bg-primary/10 hover:border-primary hover:scale-105 active:scale-95 shadow-lg shadow-primary/5"
           >
-            <h3 className=" text-xl md:text-2xl mb-5">{item.Name}</h3>
-            <p className="text-[15px] text-justify mb-5">
-              {item.description.slice(0, 120)}...
-            </p>
-            <div className="flex flex-row gap-2">
-              {item.button ? (
-                <Link
-                  // target="_blank"
-                  href={item.button}
-                  className="border p-2 px-3 rounded-lg bg-[#172d33] font-serif hover:bg-transparent duration-1000  hover:shadow-md hover:border-green-800"
-                >
-                  GitHub
-                </Link>
-              ) : null}
-              {item.live ? (
-                <Link
-                  href={item.live}
-                  // target="_blank"
-                  className="border p-2 px-3 rounded-lg bg-[#172d33] font-serif hover:bg-transparent duration-1000  hover:shadow-md hover:border-green-800"
-                >
-                  Go Live
-                </Link>
-              ) : null}
+            <span className="relative z-10">View All Projects</span>
+            <div className="absolute top-0 left-0 w-full h-full rounded-full overflow-hidden pointer-events-none">
+              <div className="absolute top-0 -left-[100%] w-[50%] h-full bg-primary/20 skew-x-[-25deg] group-hover:left-[150%] transition-all duration-700 ease-in-out"></div>
             </div>
           </Link>
-        ))}
+        </motion.div>
       </div>
-      <Link
-        href="/projectdetails"
-        className="font-serif text-3xl border p-1 mt-10 text-green-400 underline rounded-md"
-      >
-        see all...
-      </Link>
-    </div>
+    </section>
   );
 };
 

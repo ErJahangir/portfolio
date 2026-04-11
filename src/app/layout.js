@@ -1,13 +1,19 @@
-import { Outfit } from "next/font/google";
+import { Open_Sans, Syne } from "next/font/google";
 import "./globals.css";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import ScrollToTop from "./Component/ScrollTop";
 
-const outfit = Outfit({
+const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-outfit",
+  variable: "--font-open-sans",
+  display: "swap",
+});
+
+const syne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
+  display: "swap",
 });
 
 export const metadata = {
@@ -18,8 +24,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${outfit.variable} scroll-smooth`}>
-      <body className={outfit.className}>
+    <html
+      lang="en"
+      className={`${openSans.variable} ${syne.variable} scroll-smooth`}
+    >
+      <body className={openSans.className}>
         <Navigation />
         {children}
         <Footer />

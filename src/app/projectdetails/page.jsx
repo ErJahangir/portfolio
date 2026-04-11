@@ -7,16 +7,19 @@ import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 
 const ProjectsArchive = () => {
   const [filter, setFilter] = useState("All");
-  
+
   // Extract unique skills/categories for filtering
   const categories = ["All", "Web", "Mobile", "API", "UI/UX"];
 
-  const filteredProjects = filter === "All" 
-    ? ProjectData 
-    : ProjectData.filter(proj => 
-        proj.skills?.some(s => s.toLowerCase().includes(filter.toLowerCase())) ||
-        proj.description?.toLowerCase().includes(filter.toLowerCase())
-      );
+  const filteredProjects =
+    filter === "All"
+      ? ProjectData
+      : ProjectData.filter(
+          (proj) =>
+            proj.skills?.some((s) =>
+              s.toLowerCase().includes(filter.toLowerCase()),
+            ) || proj.description?.toLowerCase().includes(filter.toLowerCase()),
+        );
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6 relative overflow-hidden">
@@ -31,10 +34,15 @@ const ProjectsArchive = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h4 className="text-primary tracking-[0.3em] uppercase mb-2 text-sm font-bold">Portfolio</h4>
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">Selected <span className="text-primary italic">Works.</span></h1>
+          <h4 className="text-primary tracking-[0.3em] uppercase mb-2 text-sm font-bold">
+            Portfolio
+          </h4>
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+            Selected <span className="text-primary italic">Works.</span>
+          </h1>
           <p className="text-light max-w-2xl mx-auto text-lg mb-12">
-            A comprehensive list of my professional projects, experiments, and open-source contributions.
+            A comprehensive list of my professional projects, experiments, and
+            open-source contributions.
           </p>
 
           {/* Filter Bar */}
@@ -44,9 +52,9 @@ const ProjectsArchive = () => {
                 key={cat}
                 onClick={() => setFilter(cat)}
                 className={`px-8 py-2 rounded-full border transition-all font-bold ${
-                  filter === cat 
-                  ? "bg-primary border-primary text-slate-950 shadow-lg shadow-primary/20" 
-                  : "border-white/10 text-light hover:border-primary/50"
+                  filter === cat
+                    ? "bg-primary border-primary text-slate-950 shadow-lg shadow-primary/20"
+                    : "border-white/10 text-light hover:border-primary/50"
                 }`}
               >
                 {cat}
@@ -55,7 +63,7 @@ const ProjectsArchive = () => {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
@@ -74,9 +82,9 @@ const ProjectsArchive = () => {
                 <div className="h-48 bg-white/5 relative flex items-center justify-center overflow-hidden">
                   <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                   <span className="text-6xl text-white/5 font-bold group-hover:scale-110 transition-transform duration-700">
-                    {item.Name.split(' ')[0]}
+                    {item.Name.split(" ")[0]}
                   </span>
-                  <Link 
+                  <Link
                     href={`/projectdetails/${item.id}`}
                     className="absolute inset-0 z-10"
                   />
@@ -91,7 +99,7 @@ const ProjectsArchive = () => {
                       <FaArrowRight className="text-primary -rotate-45 group-hover:rotate-0 transition-transform mt-1" />
                     </Link>
                   </div>
-                  
+
                   <p className="text-light text-sm text-justify mb-6 line-clamp-3 leading-relaxed">
                     {item.description}
                   </p>
@@ -99,8 +107,8 @@ const ProjectsArchive = () => {
                   {/* Skills/Tags */}
                   <div className="flex flex-wrap gap-2 mb-8 mt-auto">
                     {item.skills?.slice(0, 4).map((skill, i) => (
-                      <span 
-                        key={i} 
+                      <span
+                        key={i}
                         className="text-[10px] uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded text-light"
                       >
                         {skill}
@@ -135,12 +143,14 @@ const ProjectsArchive = () => {
         </motion.div>
 
         {filteredProjects.length === 0 && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="text-center py-20"
           >
-            <p className="text-light/50 text-xl font-bold italic">No projects found matching this category.</p>
+            <p className="text-light/50 text-xl font-bold italic">
+              No projects found matching this category.
+            </p>
           </motion.div>
         )}
       </div>
